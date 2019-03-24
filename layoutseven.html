@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
 <title>Layout Seven</title>
 <style>
     div {
@@ -13,12 +13,29 @@
     #blue {
         height: 100px;
         background-color: blue;
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    .yellow1{
+        background-color: yellow;
+        margin: 20px;
+        height: 60px;
+    }
+    .yellow2{
+        background-color: yellow;
+        margin: 20px;
+        height: 60px;
     }
     </style>
+</head>
 <body>
     <div id="container">
         <div id="blue">
-        <div class= "blueyellow">
-            </div></div></div>
+            <div class= "yellow1">
+            </div>
+            <div class="yellow2">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
