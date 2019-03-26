@@ -62,15 +62,21 @@
         height: 200px;
     }
     #blue2 {
-    background-color: blue;
-    height: 700px;  
-    display: grid;
+        background-color: blue;
+        height: 700px;  
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
     }
-    .blueyellow1 {
+    
+    #blue2 div {
         background-color: yellow;
         margin: 20px;
-        height: 80px;
     }
+    .blueyellow1 {
+        height: 80px;
+        grid-column: 1/5;
+    }
+    
     #green2 {
     background-color: lime;
     height: 600px;  
@@ -107,18 +113,25 @@
         </div>
         <div id="green">
         </div>
+        
         <div id="red">
-        <div class="redyellow1">
-        </div></div>
+            <div class="redyellow1"></div>
+        </div>
+        
         <div id="bottomred">
             <div class="bottomyellow1"></div>
             <div class="bottomyellow2"></div>
             <div class="bottomyellow3"></div>
         </div>
+        
         <div id="blue2">
-        <div class="blueyellow1">
+            <div class="blueyellow1"></div>
+            <div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div>
         </div>
-        </div>
+        
         <div id="green2">
         <div class="greenyellow1">
         </div>
