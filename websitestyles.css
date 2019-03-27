@@ -45,6 +45,11 @@ div {
         background-color: #f1ece9;
 }
 
+ .blueyellow1 {
+        height: 80px;
+        grid-column: 1/5;
+    }
+
  #a2b3b7 {
         height: 625px;
         background-color: #a2b3b7;
