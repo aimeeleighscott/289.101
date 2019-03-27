@@ -2,11 +2,15 @@ div {
     outline: 1px solid black;
     }
  #container {
-    width: 800px;
+    width: 1366px;
     margin: auto;
             }
  #blue {
-    height: 200px;
-    background-color: blue;
-    grid-column: 1/5
+    height: 785px;
+    background-color: #f1ece9;
 }
+
+ #green {
+        height: 753px;
+        background-color: #bad3cc;
+    }
