@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title> Javascript Intro</title>
+        
+        <style>
+            #red {
+                background-color: red;
+            }
+            
+            <style>
+            #blue {
+                background-color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        Javascript!!!!!!
+        
+        <div id="red">
+            red
+        </div>
+        
+        <div id="red">
+            blue
+        </div>
+        
+        <button id="btn">make the red div green</button>
+        
+        <script>
+            
+            //var reddiv = document.getElementById('red');
+            //reddiv.style.backgroundColor = '#00FF00';
+            
+            document.getElementById('btn').addEventListener( 'click', function(){
+                var reddiv = document.getElementById('red');
+                reddiv.style.backgroundColor = '#00FF00';
+            });
+            
+            //console.log('hello world');
+            /*
+            document.write('<b>Hello world</b>');
+            */
+            
+            var x = 2
+            console.log(x + 2 - 1);
+            
+            var firstname = 'Aimee-Leigh';
+            var lastname = 'Scott';
+            
+            console.log (firstname + ' ' + lastname)
+            
+            console.log(9 / 3);
+            
+            console.log(3 * 3);
+            
+        </script>
+    </body>
+
+
+</html>
