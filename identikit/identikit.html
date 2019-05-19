@@ -68,7 +68,6 @@
         <img id="eye_left" src="eye_solid.svg" />
         <img id="eye_right" src="eye_solid.svg" />
         <img id="mouth" src="mouth_happy.svg" />
-        <img id="hollow eyes" src="eye_hollow.svg" />
     </div>
 
     <script>
@@ -125,6 +124,23 @@
         // hollow eyes event listener
         document.getElementById('eyes_hollow_btn').addEventListener('click', function() {
             document.getElementById('eye_left').src = 'eye_hollow.svg';
+            document.getElementById('eye_right').src = 'eye_hollow.svg';
+        });
+        
+        // solid eyes event listener
+        document.getElementById('eyes_solid_btn').addEventListener('click', function() {
+            document.getElementById('eye_left').src = 'eye_solid.svg';
+            document.getElementById('eye_right').src = 'eye_solid.svg';
+        });
+        
+        // happy mouth event listener
+        document.getElementById('mouth_happy_btn').addEventListener('click', function() {
+            document.getElementById('mouth').src = 'mouth_happy.svg';
+        });
+        
+        // sad mouth event listener
+        document.getElementById('mouth_sad_btn').addEventListener('click', function() {
+            document.getElementById('mouth').src = 'mouth_sad.svg';
         });
         
          // move mouth down further event listener
@@ -132,6 +148,12 @@
             eye_left_y += 10;
             document.getElementById('mouth').style.top = eye_left_y + 'px';
         });
+        
+        // no right eye event listener
+        document.getElementById('eyes_right_btn').addEventListener('click', function() {
+            document.getElementById('mouth').src 
+        });
+      
         
     </script>
 
