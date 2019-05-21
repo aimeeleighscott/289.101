@@ -22,6 +22,7 @@ document.getElementById('puck').style.top = puck_x + 'px';
 
 function logCoordinates() {
     
+    
 }
 
 function checkCollision() {
