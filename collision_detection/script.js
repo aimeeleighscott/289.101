@@ -21,7 +21,10 @@ document.getElementById('puck').style.left = puck_x + 'px';
 document.getElementById('puck').style.top = puck_x + 'px';
 
 function logCoordinates() {
-    
+    // has the puck gone in the hole
+    if ( puck_x > 250 && puck_x < 350 && puck_y >150 && puck_y <250) {
+            console.log('byee');
+        }
     
 }
 
