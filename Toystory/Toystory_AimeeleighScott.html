@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Toystory</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        
+        <style>
+            *    { outline: white 8px solid }
+            body { padding-top: 8px }
+            
+            /* xs devices */
+            .blue {
+                background-color: #3FB4FF;
+                height: 50px;
+            }
+            
+            .green {
+                background-color: #A6D800;
+                height: 110px;
+            }
+            
+            .orange {
+                background-color: #FFAE2E;
+                height: 170px;
+            }
+            
+            .grey {
+                background-color: #C4C4C4;
+                height: 60px;
+            }
+            
+            /* sm devices */
+            @media (min-width: 576px) {
+            }
+            
+            /* md devices */
+            @media (min-width: 768px) {
+                .green {
+                    height: 170px;
+                }
+                .orange {
+                    background-color: #FFAE2E;
+                    height: 120px;
+                }
+            }
+            
+            /* lg devices */
+            @media (min-width: 992px) {
+                .green {
+                    height: 230px;
+                }
+                .orange {
+                    height: 180px;
+                }
+                .grey {
+                    height: 170px;
+                }
+            }
+            
+            /* xl devices */
+            @media (min-width: 1200px) {
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-6 blue"></div>
+                <div class="col-lg-6 blue"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 green"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 col-lg-4 orange"></div>
+                <div class="col-12 col-lg-4 orange"></div>
+                <div class="col-12 col-lg-4 orange"></div>
+            </div>
+            
+            <div class="row">
+                <div class="d-none d-md-block col-md-6 col-lg-3 grey"></div>
+                <div class="d-none d-md-block col-md-6 col-lg-3 grey"></div>
+                <div class="d-none d-md-block col-md-6 col-lg-3 grey"></div>
+                <div class="d-none d-md-block col-md-6 col-lg-3 grey"></div>
+            </div>
+            
+        </div>
+    </body>
+
+</html>
