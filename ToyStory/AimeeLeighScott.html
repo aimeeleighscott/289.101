@@ -14,7 +14,7 @@
             /* xs devices */
             .blue {
                 background-color: #77bee2;
-                height: 450px;
+                height: 350px;
                  background-size:     cover;            
                 background-repeat:   no-repeat;
                 background-position: center center;  
@@ -87,6 +87,21 @@
             position: absolute;
             width: 200px;
         }
+        
+        #hat {
+            position: absolute;
+            width: 200px;
+        }
+            
+        #left_ear {
+            position: absolute;
+            width: 200px;
+        }
+            
+        #right_ear {
+            position: absolute;
+            width: 200px;
+        }
             
             /* sm devices */
             @media (min-width: 576px) {
@@ -141,9 +156,9 @@
         <div class="container">
             
             <div class="row">
-                <div class="col-lg-6 blue">Introducing your favourite characters from...
+                <div class="col-lg-6 blue">
                 <img src="Images/1280px-Toy_Story_logo.png" width="100%"></div>
-                <div class="col-lg-6 blue">I'm slinky Dog<img src="Images/slinky%20dog.png" width="100%" ></div>
+                <div class="col-lg-6 blue"><img src="Images/slinky%20dog.png" width="100%" ></div>
             </div>
             
             <div class="row">
@@ -151,12 +166,18 @@
                     <div id="controls">
                         <a id="eyes_up_btn">move eyes up</a>
                         <a id="eyes_down_btn">move eyes down</a>
-                        <a id="eyes_closer_btn">move eyes closer together</a>
-                        <a id="eyes_further_btn">move eyes further apart</a>
+                        <a id="eyes_closer_btn">move eyes further apart</a>
+                        <a id="eyes_further_btn">move eyes closerrr</a>
                         <a id="eyes_noright_btn">no right eye</a>
                         <a id="nose_up_btn">move nose up</a>
                         <a id="nose_down_btn">move nose down</a>
+                        <a id="left_ear_down_btn">left ear down</a>
+                        <a id="right_ear_down_btn">right ear down</a>
+                        <a id="shoes_down_btn">shoes down</a>
+                        <a id="left_arm_down">left arm down</a>
+                        <a id="right_arm_down">right arm down</a>
                         <a id="reset_btn">reset face</a>
+        
     </div>
                     <div id="face">
                         <img id="eye_left" src="Images/potato/left_eye.png" />
@@ -166,7 +187,7 @@
                         <img id="right_arm" src="Images/potato/right_arm.png" />
                         <img id="shoes" src="Images/potato/shoes.png" />
                         <img id="hat" src="Images/potato/hat.png" />
-                        <img id="left_ear" src="Images/potato/hat.png" />
+                        <img id="left_ear" src="Images/potato/left%20ear.png" />
                         <img id="right_ear" src="Images/potato/right_ear.png" />
                         
                         
@@ -176,18 +197,25 @@
                     
                     <script>
                         // coordinate variables
-                        var eye_left_x = 100;
-                        var eye_left_y = 100;
-                        var eye_right_x = 250;
-                        var eye_right_y = 100;
-                        var mouth_y = 250;
-                        var left_arm = 250;
+                        var eye_left_x = 90;
+                        var eye_left_y = 40;
+                        var eye_right_x = 70;
+                        var eye_right_y = 40;
+                        var nose_y = 140;
+                        var nose_x = 80;
+                        var hat_x = 80;
+                        var hat_y = 0;
                         
                          // set initial positions
                         document.getElementById('eye_left').style.left = eye_left_x + 'px';
                         document.getElementById('eye_left').style.top = eye_left_y + 'px';
                         document.getElementById('eye_right').style.left = eye_right_x + 'px';
                         document.getElementById('eye_right').style.top = eye_right_y + 'px';
+                        document.getElementById('mouth').style.top = nose_y + 'px';
+                        document.getElementById('mouth').style.left = nose_x + 'px';
+                        document.getElementById('hat').style.left = hat_x + 'px';
+                        document.getElementById('hat').style.top = hat_y + 'px';
+                        
                       
                         
                        
@@ -208,7 +236,7 @@
                             document.getElementById('eye_right').style.top = eye_right_y + 'px';
                         });
 
-                        // move eyes closer together listener
+                        // move eyes apart listener
                         document.getElementById('eyes_closer_btn').addEventListener('click', function() {
                             eye_left_x += 10;
                             document.getElementById('eye_left').style.left = eye_left_x + 'px';
@@ -216,7 +244,7 @@
                             document.getElementById('eye_right').style.left = eye_right_x + 'px';
                         });
 
-                        // move eyes further apart listener
+                        // move eyes closer listener
                         document.getElementById('eyes_further_btn').addEventListener('click', function() {
                             eye_left_x -= 10;
                             document.getElementById('eye_left').style.left = eye_left_x + 'px';
@@ -241,17 +269,40 @@
                             mouth_y += 10;
                             document.getElementById('mouth').style.top = mouth_y + 'px';
                         });
-
-                        // happy mouth listener
-                        document.getElementById('mouth_happy_btn').addEventListener('click', function() {
-                            document.getElementById('mouth').src = 'mouth_happy.svg';
+                        
+                        // move left ear down listener
+                        document.getElementById('left_ear_down_btn').addEventListener('click', function() {
+                            mouth_y += 10;
+                            document.getElementById('left_ear').style.top = mouth_y + 'px';
+                        });
+                        
+                        // move right ear down listener
+                        document.getElementById('right_ear_down_btn').addEventListener('click', function() {
+                            mouth_y += 10;
+                            document.getElementById('right_ear').style.top = mouth_y + 'px';
+                        });
+                        
+                        // move shoes down listener
+                        document.getElementById('shoes_down_btn').addEventListener('click', function() {
+                            mouth_y += 10;
+                            document.getElementById('shoes').style.top = mouth_y + 'px';
+                        });
+                        
+                        // move left arm down listener
+                        document.getElementById('left_arm_down_btn').addEventListener('click', function() {
+                            mouth_y += 10;
+                            document.getElementById('left_arm').style.top = mouth_y + 'px';
+                        });
+                        
+                        // move right arm down listener
+                        document.getElementById('right_arm_down_btn').addEventListener('click', function() {
+                            mouth_y += 10;
+                            document.getElementById('right_arm').style.top = mouth_y + 'px';
                         });
 
-                        // happy sad listener
-                        document.getElementById('mouth_sad_btn').addEventListener('click', function() {
-                            document.getElementById('mouth').src = 'mouth_sad.svg';
-                        });
-                                        // reset listener
+        
+
+                        // reset listener
                         document.getElementById('reset_btn').addEventListener('click', function() {
                             eye_left_x = 100;
                             eye_left_y = 100;
