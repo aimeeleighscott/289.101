@@ -49,7 +49,7 @@
 
         #controls a {
             font-family: sans-serif;
-            border: 1px solid black;
+            border: 3px solid white;
             display: inline-block;
             cursor: pointer;
             padding: 5px;
@@ -167,7 +167,7 @@
                         <a id="eyes_up_btn">move eyes up</a>
                         <a id="eyes_down_btn">move eyes down</a>
                         <a id="eyes_closer_btn">move eyes further apart</a>
-                        <a id="eyes_further_btn">move eyes closerrr</a>
+                        <a id="eyes_further_btn">move eyes closer</a>
                         <a id="eyes_noright_btn">no right eye</a>
                         <a id="mouth_up_btn">move nose up</a>
                         <a id="mouth_down_btn">move nose down</a>
@@ -178,7 +178,7 @@
                         <a id="right_arm_down">right arm down</a>
                         <a id="reset_btn">reset face</a>
         
-    </div>
+                    </div>
                     <div id="face">
                         <img id="eye_left" src="Images/potato/left_eye.png" />
                         <img id="eye_right" src="Images/potato/right_eye.png" />
@@ -310,8 +310,8 @@
                         
                         // move left arm down listener
                         document.getElementById('left_arm_down_btn').addEventListener('click', function() {
-                            mouth_y += 10;
-                            document.getElementById('left_arm').style.top = mouth_y + 'px';
+                            left_arm_y += 10;
+                            document.getElementById('left_arm').style.top = left_arm_y + 'px';
                         });
                         
                         // move right arm down listener
@@ -322,24 +322,7 @@
 
         
 
-                        // reset listener
-                        document.getElementById('reset_btn').addEventListener('click', function() {
-                            eye_left_x = 100;
-                            eye_left_y = 100;
-                            eye_right_x = 250;
-                            eye_right_y = 100;
-                            mouth_y = 250;
-                            document.getElementById('eye_left').style.left = eye_left_x + 'px';
-                            document.getElementById('eye_left').style.top = eye_left_y + 'px';
-                            document.getElementById('eye_right').style.left = eye_right_x + 'px';
-                            document.getElementById('eye_right').style.top = eye_right_y + 'px';
-                            document.getElementById('eye_left').src = 'eye_solid.svg';
-                            document.getElementById('eye_right').src = 'eye_solid.svg';
-                            document.getElementById('eye_right').style.display = 'block';
-                            document.getElementById('mouth').style.left = '100px';
-                            document.getElementById('mouth').style.top = mouth_y + 'px';
-                            document.getElementById('mouth').src = 'mouth_happy.svg';
-                        });
+                        
                     </script>
                     
                 </div>
