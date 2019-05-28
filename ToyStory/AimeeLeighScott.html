@@ -336,6 +336,46 @@
                             hat_y -= 10;
                             document.getElementById('hat').style.top = hat_y + 'px';
                         });
+                        
+                        // reset listener
+                        document.getElementById('reset_btn').addEventListener('click', function() {
+                            var eye_left_x = 90;
+                            var eye_left_y = 40;
+                            var eye_right_x = 70;
+                            var eye_right_y = 40;
+                            var nose_y = 140;
+                            var nose_x = 80;
+                            var hat_x = 80;
+                            var hat_y = 150;
+                            var left_ear_x = 100;
+                            var left_ear_y = 60;
+                            var right_ear_x = 60;
+                            var right_ear_y = 0;
+                            var shoes_x = 80;
+                            var shoes_y = 20;
+                            var right_arm_x = 60;
+                            var right_arm_y = 20;
+                            var left_arm_x = 100;
+                            var left_arm_y = 70;
+                            document.getElementById('eye_left').style.left = eye_left_x + 'px';
+                            document.getElementById('eye_left').style.top = eye_left_y + 'px';
+                            document.getElementById('eye_right').style.left = eye_right_x + 'px';
+                            document.getElementById('eye_right').style.top = eye_right_y + 'px';
+                            document.getElementById('nose').style.top = nose_y + 'px';
+                            document.getElementById('nose').style.left = nose_x + 'px';
+                            document.getElementById('hat').style.left = hat_x + 'px';
+                            document.getElementById('hat').style.top = hat_y + 'px';
+                            document.getElementById('left_ear').style.left = left_ear_x + 'px';
+                            document.getElementById('left_ear').style.top = left_ear_y + 'px';
+                            document.getElementById('right_ear').style.left = right_ear_x + 'px';
+                            document.getElementById('right_ear').style.top = right_ear_y + 'px';
+                            document.getElementById('shoes').style.left = shoes_x + 'px';
+                            document.getElementById('shoes').style.top = shoes_y + 'px';
+                            document.getElementById('left_arm').style.left = left_arm_x + 'px';
+                            document.getElementById('left_arm').style.top = left_arm_y + 'px';
+                            document.getElementById('right_arm').style.left = right_arm_x + 'px';
+                            document.getElementById('right_arm').style.top = right_arm_y + 'px';
+                        });
 
         
 
