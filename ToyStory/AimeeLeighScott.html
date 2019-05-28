@@ -186,6 +186,7 @@
                         <a id="shoes_down_btn">shoes down</a>
                         <a id="left_arm_down">left arm down</a>
                         <a id="right_arm_down">right arm down</a>
+                        <a id="hat_up_btn">Hat up</a>
                         <a id="reset_btn">reset face</a>
         
                     </div>
@@ -214,10 +215,10 @@
                         var nose_y = 140;
                         var nose_x = 80;
                         var hat_x = 80;
-                        var hat_y = 0;
+                        var hat_y = 150;
                         var left_ear_x = 100;
                         var left_ear_y = 60;
-                        var right_ear_x = 70;
+                        var right_ear_x = 60;
                         var right_ear_y = 0;
                         var shoes_x = 80;
                         var shoes_y = 20;
@@ -328,6 +329,12 @@
                         document.getElementById('right_arm_down').addEventListener('click', function() {
                             right_arm_y += 10;
                             document.getElementById('right_arm').style.top = right_arm_y + 'px';
+                        });
+                        
+                         // hat up listener
+                        document.getElementById('hat_up_btn').addEventListener('click', function() {
+                            hat_y -= 10;
+                            document.getElementById('hat').style.top = hat_y + 'px';
                         });
 
         
