@@ -7,9 +7,12 @@
         <title>Toystory</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
         
         <style>
             body { padding-top: 8px }
+            
+            
             
             /* xs devices */
             .blue {
@@ -33,11 +36,14 @@
                 height: 400px;
                  background-size:     cover;            
                 background-position: center center;  
+                font-family: 'Gloria Hallelujah', cursive;
+                
             }
             
             .green {
                 background-color: #acdd9c;
                 height: 300px;
+                font-family: 'Gloria Hallelujah', cursive;
             }
             
             #controls {
@@ -68,7 +74,7 @@
             width: 200px;
         }
 
-        #mouth {
+        #nose {
             position: absolute;
             width: 200px;
         }
@@ -115,6 +121,7 @@
                 .red {
                     background-color: #c6222f;
                     height: 300px;
+                    font-family: 'Gloria Hallelujah', cursive;
                 }
             }
             
@@ -125,9 +132,12 @@
                 }
                 .red {
                     height: 400px;
+                    font-family: 'Gloria Hallelujah', cursive;
+                     
                 }
                 .green {
                     height: 300px;
+                    font-family: 'Gloria Hallelujah', cursive;
                 }
             }
             
@@ -169,8 +179,8 @@
                         <a id="eyes_closer_btn">move eyes further apart</a>
                         <a id="eyes_further_btn">move eyes closer</a>
                         <a id="eyes_noright_btn">no right eye</a>
-                        <a id="mouth_up_btn">move nose up</a>
-                        <a id="mouth_down_btn">move nose down</a>
+                        <a id="nose_up_btn">move nose up</a>
+                        <a id="nose_down_btn">move nose down</a>
                         <a id="left_ear_down_btn">left ear down</a>
                         <a id="right_ear_down_btn">right ear down</a>
                         <a id="shoes_down_btn">shoes down</a>
@@ -182,7 +192,7 @@
                     <div id="face">
                         <img id="eye_left" src="Images/potato/left_eye.png" />
                         <img id="eye_right" src="Images/potato/right_eye.png" />
-                        <img id="mouth" src="Images/potato/nose.png" />
+                        <img id="nose" src="Images/potato/nose.png" />
                         <img id="left_arm" src="Images/potato/left_arm.png" />
                         <img id="right_arm" src="Images/potato/right_arm.png" />
                         <img id="shoes" src="Images/potato/shoes.png" />
@@ -221,8 +231,8 @@
                         document.getElementById('eye_left').style.top = eye_left_y + 'px';
                         document.getElementById('eye_right').style.left = eye_right_x + 'px';
                         document.getElementById('eye_right').style.top = eye_right_y + 'px';
-                        document.getElementById('mouth').style.top = nose_y + 'px';
-                        document.getElementById('mouth').style.left = nose_x + 'px';
+                        document.getElementById('nose').style.top = nose_y + 'px';
+                        document.getElementById('nose').style.left = nose_x + 'px';
                         document.getElementById('hat').style.left = hat_x + 'px';
                         document.getElementById('hat').style.top = hat_y + 'px';
                         document.getElementById('left_ear').style.left = left_ear_x + 'px';
@@ -279,15 +289,15 @@
                         });
 
                         // move nose up listener
-                        document.getElementById('mouth_up_btn').addEventListener('click', function() {
-                            mouth_y -= 10;
-                            document.getElementById('mouth').style.top = nose_y + 'px';
+                        document.getElementById('nose_up_btn').addEventListener('click', function() {
+                            nose_y -= 10;
+                            document.getElementById('nose').style.top = nose_y + 'px';
                         });
 
                         // move nose down listener
                         document.getElementById('nose_down_btn').addEventListener('click', function() {
-                            mouth_y += 10;
-                            document.getElementById('mouth').style.top = mouth_y + 'px';
+                            nose_y += 10;
+                            document.getElementById('nose').style.top = nose_y + 'px';
                         });
                         
                         // move left ear down listener
@@ -298,8 +308,8 @@
                         
                         // move right ear down listener
                         document.getElementById('right_ear_down_btn').addEventListener('click', function() {
-                            mouth_y += 10;
-                            document.getElementById('right_ear').style.top = mouth_y + 'px';
+                            right_ear_y += 10;
+                            document.getElementById('right_ear').style.top = right_ear_y + 'px';
                         });
                         
                         // move shoes down listener
@@ -309,15 +319,15 @@
                         });
                         
                         // move left arm down listener
-                        document.getElementById('left_arm_down_btn').addEventListener('click', function() {
+                        document.getElementById('left_arm_down').addEventListener('click', function() {
                             left_arm_y += 10;
                             document.getElementById('left_arm').style.top = left_arm_y + 'px';
                         });
                         
                         // move right arm down listener
-                        document.getElementById('right_arm_down_btn').addEventListener('click', function() {
-                            mouth_y += 10;
-                            document.getElementById('right_arm').style.top = mouth_y + 'px';
+                        document.getElementById('right_arm_down').addEventListener('click', function() {
+                            right_arm_y += 10;
+                            document.getElementById('right_arm').style.top = right_arm_y + 'px';
                         });
 
         
@@ -329,16 +339,16 @@
             </div>
             
             <div class="row">
-                <div class="col-12 col-lg-4 red">Hey! Hi! Hello! I'm buzz lightyear<img src="Images/buzzlightyear.png" width="100%"></div>
-                <div class="col-12 col-lg-4 red"> Howdy! I'm Andy<img src="Images/andy.png" width="100%"></div>
-                <div class="col-12 col-lg-4 red"> I'm Rex!<img src="Images/rex.png" width="100%"></div>
+                <div class="col-12 col-lg-4 red">Hey! Hi! Hello! I'm buzz lightyear. I'm known for bravery and courage. <img src="Images/buzzlightyear.png" width="100%"></div>
+                <div class="col-12 col-lg-4 red"> Howdy! I'm Woody. I am loyal, smart and determined.<img src="Images/andy.png" width="100%"></div>
+                <div class="col-12 col-lg-4 red"> I'm Rex! I'm gentle, kind and caring.<img src="Images/rex.png" width="100%"></div>
             </div>
             
             <div class="row">
-                <div class="d-none d-md-block col-md-6 col-lg-3 green">Toy Story 1</div>
-                <div class="d-none d-md-block col-md-6 col-lg-3 green">Toy Story 2<img src="Images/2.png" width="100%"></div>
-                <div class="d-none d-md-block col-md-6 col-lg-3 green">Toy Story 3<img src="Images/3.png" width="100%"></div>
-                <div class="d-none d-md-block col-md-6 col-lg-3 green">Toy Story 4<img src="Images/4.png" width="100%"></div>
+                <div class="d-none d-md-block col-md-6 col-lg-3 green">Toy Story was released in 1995<img src="Images/1.png" width="100%"></div>
+                <div class="d-none d-md-block col-md-6 col-lg-3 green">Toy Story 2 was releases in 1999<img src="Images/2.png" width="100%"></div>
+                <div class="d-none d-md-block col-md-6 col-lg-3 green">Toy Story 3 was released in 2010<img src="Images/3.png" width="100%"></div>
+                <div class="d-none d-md-block col-md-6 col-lg-3 green">Toy Story 4 is scheduled for release in 2019<img src="Images/4.png" width="100%"></div>
             </div>
             
         </div>
