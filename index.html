@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Toystory</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+        
+        <style>
+            body { padding-top: 8px }
+            
+            
+            
+            /* xs devices */
+            .blue {
+                background-color: #77bee2;
+                height: 350px;
+                 background-size:     cover;            
+                background-repeat:   no-repeat;
+                background-position: center center;  
+            }
+            
+            .yellow {
+                background-color: #f9d345;
+                background-image: url(Images/background.jpg);
+                background-repeat:   no-repeat;
+                background-size: cover;
+                background-position: bottom;
+            }
+            
+            
+            .red {
+                background-color: #c6222f;
+                height: 400px;
+                 background-size:     cover;            
+                background-position: center center;  
+                font-family: 'Gloria Hallelujah', cursive;
+                
+            }
+            
+            .green {
+                background-color: #acdd9c;
+                height: 300px;
+                font-family: 'Gloria Hallelujah', cursive;
+            }
+            
+            #controls {
+            text-align: center;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        #controls a {
+            font-family: sans-serif;
+            border: 3px solid white;
+            display: inline-block;
+            cursor: pointer;
+            padding: 5px;
+            margin: 5px;
+        }
+        
+
+        #controls a:hover {
+            background-color: yellow;
+        }
+
+
+
+        #eye_left, #eye_right {
+            position: absolute;
+            width: 200px;
+        }
+
+        #nose {
+            position: absolute;
+            width: 200px;
+        }
+            
+        #left_arm {
+            position: absolute;
+            width: 200px;
+        }
+            
+        #right_arm {
+            position: absolute;
+            width: 200px;
+        }
+            
+        #shoes {
+            position: absolute;
+            width: 200px;
+        }
+        
+        #hat {
+            position: absolute;
+            width: 200px;
+        }
+            
+        #left_ear {
+            position: absolute;
+            width: 200px;
+        }
+            
+        #right_ear {
+            position: absolute;
+            width: 200px;
+        }
+            
+            #red {
+                color: yellow;
+            }
+            
+        #red img {
+            width:50%
+        }
+            
+            #green {
+                text-align: center;
+            }
+            
+            
+            
+            /* sm devices */
+            @media (min-width: 576px) {
+
+            }
+            
+            /* md devices */
+            @media (min-width: 768px) {
+                .yellow {
+                    height: 600px;
+                }
+                .red {
+                    background-color: #c6222f;
+                    height: 300px;
+                    font-family: 'Gloria Hallelujah', cursive;
+                }
+                #green img {
+                    height: 70%
+                }
+            }
+            
+            /* lg devices */
+            @media (min-width: 992px) {
+                #red img {
+                    width:100%
+                }
+                .yellow {
+                    height: 600px;
+                }
+                .red {
+                    height: 400px;
+                    font-family: 'Gloria Hallelujah', cursive;
+                     
+                }
+                .green {
+                    height: 300px;
+                    font-family: 'Gloria Hallelujah', cursive;
+                }
+            }
+            
+            /* xl devices */
+            @media (min-width: 1200px) {
+            }
+            
+            #face {
+                width: 360px;
+                height: 400px;
+                margin: auto;
+                background-image: url(Images/potato/body.png);
+                background-repeat: no-repeat;
+                background-position: center 80px;
+                background-size: 300px;
+                position: relative;
+            }
+            
+            
+            
+            
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-6 blue">
+                <img src="Images/1280px-Toy_Story_logo.png" width="100%"></div>
+                <div class="col-lg-6 blue"><img src="Images/slinky%20dog.png" width="100%" ></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 yellow">
+                    <div id="controls">
+                        <a id="eyes_up_btn">Eyes up</a>
+                        <a id="eyes_down_btn">Eyes down</a>
+                        <a id="eyes_closer_btn">Eyes further apart</a>
+                        <a id="eyes_further_btn">Eyes closer</a>
+                        <a id="eyes_noright_btn">No right eye</a>
+                        <a id="nose_up_btn">Nose up</a>
+                        <a id="nose_down_btn">Nose down</a>
+                        <a id="left_ear_down_btn">Left ear down</a>
+                        <a id="right_ear_down_btn">Right ear down</a>
+                        <a id="shoes_down_btn">Shoes down</a>
+                        <a id="left_arm_down">Left arm down</a>
+                        <a id="right_arm_down">Right arm down</a>
+                        <a id="hat_up_btn">Hat up</a>
+                        <a id="reset_btn">Reset Mr Potato</a>
+        
+                    </div>
+                    <div id="face">
+                        <img id="eye_left" src="Images/potato/left_eye.png" />
+                        <img id="eye_right" src="Images/potato/right_eye.png" />
+                        <img id="nose" src="Images/potato/nose.png" />
+                        <img id="left_arm" src="Images/potato/left_arm.png" />
+                        <img id="right_arm" src="Images/potato/right_arm.png" />
+                        <img id="shoes" src="Images/potato/shoes.png" />
+                        <img id="hat" src="Images/potato/hat.png" />
+                        <img id="left_ear" src="Images/potato/left%20ear.png" />
+                        <img id="right_ear" src="Images/potato/right_ear.png" />
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                    <script>
+                        // coordinate variables
+                        var eye_left_x = 90;
+                        var eye_left_y = 40;
+                        var eye_right_x = 70;
+                        var eye_right_y = 40;
+                        var nose_y = 140;
+                        var nose_x = 80;
+                        var hat_x = 80;
+                        var hat_y = 150;
+                        var left_ear_x = 100;
+                        var left_ear_y = 60;
+                        var right_ear_x = 60;
+                        var right_ear_y = 0;
+                        var shoes_x = 80;
+                        var shoes_y = 20;
+                        var right_arm_x = 60;
+                        var right_arm_y = 20;
+                        var left_arm_x = 100;
+                        var left_arm_y = 70;
+                        
+                         // set initial positions
+                        document.getElementById('eye_left').style.left = eye_left_x + 'px';
+                        document.getElementById('eye_left').style.top = eye_left_y + 'px';
+                        document.getElementById('eye_right').style.left = eye_right_x + 'px';
+                        document.getElementById('eye_right').style.top = eye_right_y + 'px';
+                        document.getElementById('nose').style.top = nose_y + 'px';
+                        document.getElementById('nose').style.left = nose_x + 'px';
+                        document.getElementById('hat').style.left = hat_x + 'px';
+                        document.getElementById('hat').style.top = hat_y + 'px';
+                        document.getElementById('left_ear').style.left = left_ear_x + 'px';
+                        document.getElementById('left_ear').style.top = left_ear_y + 'px';
+                        document.getElementById('right_ear').style.left = right_ear_x + 'px';
+                        document.getElementById('right_ear').style.top = right_ear_y + 'px';
+                        document.getElementById('shoes').style.left = shoes_x + 'px';
+                        document.getElementById('shoes').style.top = shoes_y + 'px';
+                        document.getElementById('left_arm').style.left = left_arm_x + 'px';
+                        document.getElementById('left_arm').style.top = left_arm_y + 'px';
+                        document.getElementById('right_arm').style.left = right_arm_x + 'px';
+                        document.getElementById('right_arm').style.top = right_arm_y + 'px';
+                        
+                      
+                        
+                       
+                        
+                        // move eyes up event listener
+                        document.getElementById('eyes_up_btn').addEventListener('click', function() {
+                            eye_left_y -= 10;
+                            document.getElementById('eye_left').style.top = eye_left_y + 'px';
+                            eye_right_y -= 10;
+                            document.getElementById('eye_right').style.top = eye_right_y + 'px';
+                        });
+                        
+                        // move eyes down listener
+                        document.getElementById('eyes_down_btn').addEventListener('click', function() {
+                            eye_left_y += 10;
+                            document.getElementById('eye_left').style.top = eye_left_y + 'px';
+                            eye_right_y += 10;
+                            document.getElementById('eye_right').style.top = eye_right_y + 'px';
+                        });
+
+                        // move eyes apart listener
+                        document.getElementById('eyes_closer_btn').addEventListener('click', function() {
+                            eye_left_x += 10;
+                            document.getElementById('eye_left').style.left = eye_left_x + 'px';
+                            eye_right_x -= 10;
+                            document.getElementById('eye_right').style.left = eye_right_x + 'px';
+                        });
+
+                        // move eyes closer listener
+                        document.getElementById('eyes_further_btn').addEventListener('click', function() {
+                            eye_left_x -= 10;
+                            document.getElementById('eye_left').style.left = eye_left_x + 'px';
+                            eye_right_x += 10;
+                            document.getElementById('eye_right').style.left = eye_right_x + 'px';
+                        });
+
+
+                        // no right eye listener
+                        document.getElementById('eyes_noright_btn').addEventListener('click', function() {
+                            document.getElementById('eye_right').style.display = 'none';
+                        });
+
+                        // move nose up listener
+                        document.getElementById('nose_up_btn').addEventListener('click', function() {
+                            nose_y -= 10;
+                            document.getElementById('nose').style.top = nose_y + 'px';
+                        });
+
+                        // move nose down listener
+                        document.getElementById('nose_down_btn').addEventListener('click', function() {
+                            nose_y += 10;
+                            document.getElementById('nose').style.top = nose_y + 'px';
+                        });
+                        
+                        // move left ear down listener
+                        document.getElementById('left_ear_down_btn').addEventListener('click', function() {
+                            left_ear_y += 10;
+                            document.getElementById('left_ear').style.top = left_ear_y + 'px';
+                        });
+                        
+                        // move right ear down listener
+                        document.getElementById('right_ear_down_btn').addEventListener('click', function() {
+                            right_ear_y += 10;
+                            document.getElementById('right_ear').style.top = right_ear_y + 'px';
+                        });
+                        
+                        // move shoes down listener
+                        document.getElementById('shoes_down_btn').addEventListener('click', function() {
+                            shoes_y += 10;
+                            document.getElementById('shoes').style.top = shoes_y + 'px';
+                        });
+                        
+                        // move left arm down listener
+                        document.getElementById('left_arm_down').addEventListener('click', function() {
+                            left_arm_y += 10;
+                            document.getElementById('left_arm').style.top = left_arm_y + 'px';
+                        });
+                        
+                        // move right arm down listener
+                        document.getElementById('right_arm_down').addEventListener('click', function() {
+                            right_arm_y += 10;
+                            document.getElementById('right_arm').style.top = right_arm_y + 'px';
+                        });
+                        
+                         // hat up listener
+                        document.getElementById('hat_up_btn').addEventListener('click', function() {
+                            hat_y -= 10;
+                            document.getElementById('hat').style.top = hat_y + 'px';
+                        });
+                        
+                        // reset listener
+                        document.getElementById('reset_btn').addEventListener('click', function() {
+                            var eye_left_x = 90;
+                            var eye_left_y = 40;
+                            var eye_right_x = 70;
+                            var eye_right_y = 40;
+                            var nose_y = 140;
+                            var nose_x = 80;
+                            var hat_x = 80;
+                            var hat_y = 150;
+                            var left_ear_x = 100;
+                            var left_ear_y = 60;
+                            var right_ear_x = 60;
+                            var right_ear_y = 0;
+                            var shoes_x = 80;
+                            var shoes_y = 20;
+                            var right_arm_x = 60;
+                            var right_arm_y = 20;
+                            var left_arm_x = 100;
+                            var left_arm_y = 70;
+                            document.getElementById('eye_left').style.left = eye_left_x + 'px';
+                            document.getElementById('eye_left').style.top = eye_left_y + 'px';
+                            document.getElementById('eye_right').style.left = eye_right_x + 'px';
+                            document.getElementById('eye_right').style.top = eye_right_y + 'px';
+                            document.getElementById('nose').style.top = nose_y + 'px';
+                            document.getElementById('nose').style.left = nose_x + 'px';
+                            document.getElementById('hat').style.left = hat_x + 'px';
+                            document.getElementById('hat').style.top = hat_y + 'px';
+                            document.getElementById('left_ear').style.left = left_ear_x + 'px';
+                            document.getElementById('left_ear').style.top = left_ear_y + 'px';
+                            document.getElementById('right_ear').style.left = right_ear_x + 'px';
+                            document.getElementById('right_ear').style.top = right_ear_y + 'px';
+                            document.getElementById('shoes').style.left = shoes_x + 'px';
+                            document.getElementById('shoes').style.top = shoes_y + 'px';
+                            document.getElementById('left_arm').style.left = left_arm_x + 'px';
+                            document.getElementById('left_arm').style.top = left_arm_y + 'px';
+                            document.getElementById('right_arm').style.left = right_arm_x + 'px';
+                            document.getElementById('right_arm').style.top = right_arm_y + 'px';
+                        });
+
+        
+
+                        
+                    </script>
+                    
+                </div>
+            </div>
+            
+            <div class="row" id="red">
+                <div class="col-12 col-lg-4 red">Hey! Hi! Hello! I'm buzz lightyear. I'm known for bravery and courage. <img src="Images/buzzlightyear.png"></div>
+                <div class="col-12 col-lg-4 red"> Howdy! I'm Woody. I am loyal, smart and determined.<img src="Images/andy.png" ></div>
+                <div class="col-12 col-lg-4 red"> I'm Rex! I'm gentle, kind and caring.<img src="Images/rex.png"></div>
+            </div>
+            
+            <div class="row" id="green">
+                <div class="d-none d-md-block col-md-6 col-lg-3 green">Toy Story was released in 1995<br/><img src="Images/1.png" height="50%"></div>
+                <div class="d-none d-md-block col-md-6 col-lg-3 green">Toy Story 2 was releases in 1999<br/><img src="Images/2.png" height="50%"></div>
+                <div class="d-none d-md-block col-md-6 col-lg-3 green">Toy Story 3 was released in 2010<br/><img src="Images/3.png" height="50%"></div>
+                <div class="d-none d-md-block col-md-6 col-lg-3 green">Toy Story 4 is scheduled for release in 2019<br/><img src="Images/4.png" height="50%"></div>
+            </div>
+            
+        </div>
+    </body>
+    
+    
+
+</html>
